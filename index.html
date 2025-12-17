@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PureSkin – Privacy Policy & Terms of Service</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #2D3436;
-            --accent-color: #00B894;
-            --bg-color: #FDFDFD;
-            --text-color: #444;
-            --light-text: #666;
-            --border-color: #EEE;
+            --brand-color: #00B894;
+            /* Mint Green */
+            --brand-dark: #008f72;
+            --bg-color: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --text-color: #2D3436;
+            --light-text: #636E72;
+            --border-color: #E9ECEF;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 12px;
         }
 
         * {
@@ -19,264 +30,413 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
             padding: 0;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, #FFF 0%, #F1F3F5 100%);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
         }
 
         h1 {
             color: var(--primary-color);
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0 0 15px 0;
+            letter-spacing: -0.5px;
         }
 
         .last-updated {
             color: var(--light-text);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Card Style Sections */
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            box-shadow: var(--shadow-md);
         }
 
         h2 {
-            color: var(--primary-color);
-            margin-top: 40px;
-            padding-bottom: 10px;
+            color: var(--brand-color);
+            font-size: 1.75rem;
+            margin: 0 0 25px 0;
+            padding-bottom: 15px;
             border-bottom: 2px solid var(--border-color);
+            font-weight: 600;
         }
 
         h3 {
             color: var(--primary-color);
-            margin-top: 25px;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
-        p, li {
-            font-size: 1rem;
+        p,
+        li {
+            font-size: 1.05rem;
             margin-bottom: 15px;
+            color: #4A4A4A;
         }
 
         ul {
             padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li strong {
+            color: var(--primary-color);
+        }
+
+        /* Alert and Info Boxes */
+        .alert-box,
+        .disclaimer-box {
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 5px solid transparent;
         }
 
         .alert-box {
-            background-color: #FFF3CD;
-            border: 1px solid #FFEEBA;
-            color: #856404;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
+            background-color: #FFF8E1;
+            border-left-color: #FFC107;
+            color: #795548;
         }
 
         .disclaimer-box {
-            background-color: #F8D7DA;
-            border: 1px solid #F5C6CB;
-            color: #721C24;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-weight: bold;
+            background-color: #FFEBEE;
+            border-left-color: #FF5252;
+            color: #C62828;
+        }
+
+        .alert-box h3,
+        .disclaimer-box h3 {
+            margin-top: 0;
+            color: inherit;
         }
 
         a {
-            color: var(--accent-color);
+            color: var(--brand-color);
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
         a:hover {
+            color: var(--brand-dark);
             text-decoration: underline;
         }
 
         footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            margin-bottom: 40px;
             text-align: center;
             color: var(--light-text);
             font-size: 0.9rem;
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 1.5rem; }
-            .container { padding: 15px; }
+            .container {
+                margin: 20px auto;
+            }
+
+            header {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <h1>PureSkin – Privacy Policy & Terms of Service</h1>
-        <p class="last-updated">Last Updated: December 12, 2025</p>
-    </header>
+    <div class="container">
+        <header>
+            <img src="assets/pureskin_icon.png" alt="PureSkin App Icon"
+                style="width: 80px; height: 80px; border-radius: 18px; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h1>PureSkin – Privacy Policy & Terms of Service</h1>
+            <p class="last-updated">Last Updated: December 12, 2025</p>
+        </header>
 
-    <section id="introduction">
-        <p>Welcome to PureSkin. This document serves as both our <strong>Privacy Policy</strong> and <strong>Terms of Service</strong>. By downloading, accessing, or using the PureSkin mobile application, you agree to be bound by these terms.</p>
-        <p>PureSkin is designed to help you understand skincare ingredients through barcode scanning and AI analysis. Please read this document carefully to understand how we handle your data and the limitations of our service.</p>
-    </section>
+        <section id="introduction">
+            <p>Welcome to PureSkin. This document serves as both our <strong>Privacy Policy</strong> and <strong>Terms
+                    of Service</strong>. By downloading, accessing, or using the PureSkin mobile application, you agree
+                to be bound by these terms.</p>
+            <p>PureSkin is designed to help you understand skincare ingredients through barcode scanning and AI
+                analysis. Please read this document carefully to understand how we handle your data and the limitations
+                of our service.</p>
+        </section>
 
-    <!-- PRIVACY POLICY -->
-    <section id="privacy-policy">
-        <h2>Privacy Policy</h2>
+        <!-- PRIVACY POLICY -->
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
 
-        <h3>1. Information We Collect</h3>
-        <p>We collect minimal data necessary to provide our services:</p>
-        <ul>
-            <li><strong>Account Information:</strong> If you create an account, we store your User ID (via Firebase Authentication). We do not store passwords; authentication is handled securely by Google/Firebase.</li>
-            <li><strong>Product Data:</strong> Barcodes you scan, photos of products or ingredients you upload, and any text corrections you submit.</li>
-            <li><strong>Usage Data:</strong> Anonymous, aggregated analytics about how you interact with the app (e.g., screens visited, buttons clicked) to help us improve performance.</li>
-            <li><strong>Device Information:</strong> Device type and operating system version for troubleshooting and optimization.</li>
-        </ul>
-        <p><strong>We DO NOT collect:</strong> Medical records, biometric data, precise location data, or payment card details (payments are processed entirely by the Apple App Store or Google Play Store).</p>
-
-        <h3>2. How We Use Your Information</h3>
-        <p>Your data is used to:</p>
-        <ul>
-            <li>Provide ingredient analysis and product insights.</li>
-            <li>Manage your account and sync your scan history.</li>
-            <li>Improve the accuracy of our product database through crowd-sourced contributions.</li>
-            <li>Detect and prevent fraud or abuse of the service.</li>
-        </ul>
-
-        <h3>3. AI & Automated Processing (xAI / Grok)</h3>
-        <p>PureSkin uses artificial intelligence services provided by <strong>xAI (Grok models)</strong> to process and analyze ingredient information.</p>
-        <p>You acknowledge and agree to the following data usage:</p>
-        <ul>
-            <li><strong>Model Improvement:</strong> Product-related data sent to xAI (such as ingredient text lists, OCR outputs, and anonymized product metadata) may be processed in accordance with <a href="https://x.ai/legal/privacy-policy" target="_blank">xAI’s Privacy Policy</a> and may be used by xAI to evaluate, train, or refine their AI models to improve performance and reliability.</li>
-            <li><strong>No PII Transmission:</strong> PureSkin does not transmit personally identifiable user information (PII) to xAI. Only product-specific content is shared for analysis.</li>
-        </ul>
-
-        <h3>4. User-Generated Content</h3>
-        <p>When you submit photos, new products, corrections, or other content to PureSkin ("Contributions"):</p>
-        <ul>
-            <li><strong>Public Availability:</strong> By submitting product images, ingredient photos, corrections, or other content to PureSkin, you acknowledge and agree that this content may be reviewed, modified, stored, and made publicly available within the application after administrative approval.</li>
-            <li><strong>Database Improvement:</strong> User-submitted content may be used to improve the overall quality, accuracy, and completeness of the PureSkin product database for the benefit of all users.</li>
-            <li><strong>Review Process:</strong> All contributions are subject to administrative review. We reserve the right to reject or modify content that does not meet our standards.</li>
-        </ul>
-
-        <h3>5. Data Storage & Security</h3>
-        <p>We use <strong>Google Firebase</strong> (Firestore, Storage, and Cloud Functions) to securely store and process data. We implement industry-standard security measures to protect your information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
-
-        <h3>6. Data Retention</h3>
-        <p>We retain your account data as long as your account is active. If you delete your account, your personal profile data is removed. However, anonymized product contributions (such as corrected ingredient lists and product photos) will be retained in our database indefinitely to ensure service continuity for other users.</p>
-
-        <h3>7. User Rights</h3>
-        <p>Depending on your location (including GDPR for EU users), you have the right to:</p>
-        <ul>
-            <li>Access the personal data we hold about you.</li>
-            <li>Request correction of inaccurate data.</li>
-            <li>Request deletion of your account and personal data.</li>
-        </ul>
-        <p>You can exercise these rights directly within the app settings or by contacting us.</p>
-
-        <h3>8. Children's Privacy</h3>
-        <p>PureSkin is not intended for children under the age of 13 (or 16 in certain jurisdictions). We do not knowingly collect personal data from children. If we become aware that we have collected such data, we will take steps to delete it immediately.</p>
-    </section>
-
-    <!-- TERMS OF SERVICE -->
-    <section id="terms-of-service">
-        <h2>Terms of Service</h2>
-
-        <h3>1. Acceptance of Terms</h3>
-        <p>By using PureSkin, you agree to these Terms. If you do not agree, you must not use the application.</p>
-
-        <h3>2. Description of Service</h3>
-        <p>PureSkin provides informational analysis of cosmetic and skincare ingredients. We offer both free and premium access tiers. Features may change at any time without prior notice.</p>
-
-        <div class="disclaimer-box">
-            <h3>3. NO MEDICAL ADVICE DISCLAIMER</h3>
-            <p>PURESKIN IS NOT A MEDICAL APP. THE CONTENT PROVIDED, INCLUDING AI-GENERATED ANALYSES, IS FOR INFORMATIONAL PURPOSES ONLY.</p>
-            <p>PureSkin does not provide diagnoses, treatments, prescriptions, or medical recommendations. No content in the application should be interpreted as a substitute for professional medical advice, diagnosis, or treatment.</p>
-            <p>ALWAYS CONSULT A DERMATOLOGIST OR QUALIFIED HEALTHCARE PROFESSIONAL REGARDING SKIN CONDITIONS OR ALLERGIES.</p>
-        </div>
-
-        <div class="alert-box">
-            <h3>4. AI & Accuracy Disclaimer</h3>
-            <p>Our analysis is powered by artificial intelligence (xAI / Grok). While we strive for accuracy, AI models can make mistakes, hallucinate ingredients, or provide incomplete information.</p>
-            <p><strong>You acknowledge that:</strong></p>
+            <h3>1. Information We Collect</h3>
+            <p>We collect minimal data necessary to provide our services:</p>
             <ul>
-                <li>The analysis may not be 100% accurate or up-to-date.</li>
-                <li>Product formulations change frequently; the data in our app may differ from the physical product label.</li>
-                <li>You should always verify the ingredient list on the physical product packaging before use.</li>
+                <li><strong>Account Information:</strong> If you create an account, we store your User ID (via Firebase
+                    Authentication). We do not store passwords; authentication is handled securely by Google/Firebase.
+                </li>
+                <li><strong>Product Data:</strong> Barcodes you scan, photos of products or ingredients you upload, and
+                    any text corrections you submit.</li>
+                <li><strong>Usage Data:</strong> Anonymous, aggregated analytics about how you interact with the app
+                    (e.g., screens visited, buttons clicked) to help us improve performance.</li>
+                <li><strong>Device Information:</strong> Device type and operating system version for troubleshooting
+                    and optimization.</li>
             </ul>
-        </div>
+            <p><strong>We DO NOT collect:</strong> Medical records, biometric data, precise location data, or payment
+                card details (payments are processed entirely by the Apple App Store or Google Play Store).</p>
 
-        <h3>5. Personal Compatibility Disclaimer</h3>
-        <p>Ingredient analyses and scores provided by PureSkin are generated using automated systems and general scientific references.</p>
-        <p>Individual skin reactions may vary based on personal factors such as skin type, allergies, medical conditions, genetics, lifestyle, or environmental exposure.</p>
-        <p><strong>PureSkin does not guarantee that a product analyzed as "safe" or "recommended" will be suitable for every individual user.</strong></p>
+            <h3>2. How We Use Your Information</h3>
+            <p>Your data is used to:</p>
+            <ul>
+                <li>Provide ingredient analysis and product insights.</li>
+                <li>Manage your account and sync your scan history.</li>
+                <li>Improve the accuracy of our product database through crowd-sourced contributions.</li>
+                <li>Detect and prevent fraud or abuse of the service.</li>
+            </ul>
 
-        <h3>6. Advertising & Brand Neutrality</h3>
-        <p><strong>No Sponsored Content:</strong> PureSkin does not display paid advertisements, sponsored content, or promoted products. We do not have any commercial relationships, sponsorships, endorsements, or partnerships with cosmetic or skincare brands unless explicitly stated.</p>
-        <p><strong>Informational Use Only:</strong> All product names, brand names, and images displayed in the application are shown solely for informational and identification purposes based on publicly available product data or user-submitted content.</p>
+            <h3>3. AI & Automated Processing (xAI / Grok)</h3>
+            <p>PureSkin uses artificial intelligence services provided by <strong>xAI (Grok models)</strong> to process
+                and analyze ingredient information.</p>
+            <p>You acknowledge and agree to the following data usage:</p>
+            <ul>
+                <li><strong>Model Improvement:</strong> Product-related data sent to xAI (such as ingredient text lists,
+                    OCR outputs, and anonymized product metadata) may be processed in accordance with <a
+                        href="https://x.ai/legal/privacy-policy" target="_blank">xAI’s Privacy Policy</a> and may be
+                    used by xAI to evaluate, train, or refine their AI models to improve performance and reliability.
+                </li>
+                <li><strong>No PII Transmission:</strong> PureSkin does not transmit personally identifiable user
+                    information (PII) to xAI. Only product-specific content is shared for analysis.</li>
+            </ul>
 
-        <h3>7. User Responsibilities</h3>
-        <p>You agree not to:</p>
-        <ul>
-            <li>Use the app for any illegal purpose.</li>
-            <li>Reverse engineer, decompile, or attempt to extract the source code of the app.</li>
-            <li>Submit false, misleading, or malicious content (e.g., fake products or inappropriate photos).</li>
-            <li>Abuse the credit system or attempt to bypass premium limitations.</li>
-        </ul>
+            <h3>4. User-Generated Content</h3>
+            <p>When you submit photos, new products, corrections, or other content to PureSkin ("Contributions"):</p>
+            <ul>
+                <li><strong>Public Availability:</strong> By submitting product images, ingredient photos, corrections,
+                    or other content to PureSkin, you acknowledge and agree that this content may be reviewed, modified,
+                    stored, and made publicly available within the application after administrative approval.</li>
+                <li><strong>Database Improvement:</strong> User-submitted content may be used to improve the overall
+                    quality, accuracy, and completeness of the PureSkin product database for the benefit of all users.
+                </li>
+                <li><strong>Review Process:</strong> All contributions are subject to administrative review. We reserve
+                    the right to reject or modify content that does not meet our standards.</li>
+            </ul>
 
-        <h3>8. Crowdsourced Contributions</h3>
-        <p>By submitting photos, corrections, ingredient lists, or new product data to PureSkin:</p>
-        <ul>
-            <li>You grant PureSkin a <strong>perpetual, irrevocable, worldwide, royalty-free, and transferable license</strong> to use, reproduce, modify, adapt, publish, translate, display, and distribute such content in any media.</li>
-            <li>You acknowledge that approved Contributions become part of our permanent, shared product database and cannot be withdrawn or revoked once submitted.</li>
-            <li>You represent that the content is accurate and does not violate the intellectual property rights of others.</li>
-            <li>We reserve the right to reject, edit, or remove any contribution at our sole discretion.</li>
-            <li>You waive any moral rights or claims of ownership over these Contributions once submitted.</li>
-        </ul>
+            <h3>5. Data Storage & Security</h3>
+            <p>We use <strong>Google Firebase</strong> (Firestore, Storage, and Cloud Functions) to securely store and
+                process data. We implement industry-standard security measures to protect your information. However, no
+                method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
 
-        <h3>9. Credits & Premium Access</h3>
-        <p>PureSkin may offer limited free analysis credits or Premium subscriptions.</p>
-        <ul>
-            <li><strong>Credits:</strong> Free credits have no monetary value and cannot be exchanged for cash.</li>
-            <li><strong>Subscriptions:</strong> Payment is charged to your Apple ID or Google Play account. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Management of subscriptions is handled via your device settings.</li>
-        </ul>
+            <h3>6. Data Retention</h3>
+            <p>We retain your account data as long as your account is active. If you delete your account, your personal
+                profile data is removed. However, anonymized product contributions (such as corrected ingredient lists
+                and product photos) will be retained in our database indefinitely to ensure service continuity for other
+                users.</p>
 
-        <h3>10. Limitation of Liability</h3>
-        <p>To the fullest extent permitted by law, PureSkin and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to damages for loss of profits, goodwill, or data, or for any skin reactions or health issues arising from the use of products analyzed by the app.</p>
+            <h3>7. User Rights</h3>
+            <p>Depending on your location (including GDPR for EU users), you have the right to:</p>
+            <ul>
+                <li>Access the personal data we hold about you.</li>
+                <li>Request correction of inaccurate data.</li>
+                <li>Request deletion of your account and personal data.</li>
+            </ul>
+            <p>You can exercise these rights directly within the app settings or by contacting us.</p>
 
-        <h3>11. Termination</h3>
-        <p>We reserve the right to suspend or terminate your access to PureSkin at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.</p>
+            <h3>8. Children's Privacy</h3>
+            <p>PureSkin is not intended for children under the age of 13 (or 16 in certain jurisdictions). We do not
+                knowingly collect personal data from children. If we become aware that we have collected such data, we
+                will take steps to delete it immediately.</p>
+        </section>
 
-        <h3>12. Changes to Terms</h3>
-        <p>We may update these Terms from time to time. Your continued use of the app following any changes indicates your acceptance of the new Terms.</p>
+        <!-- TERMS OF SERVICE -->
+        <section id="terms-of-service">
+            <h2>Terms of Service</h2>
 
-        <h3>13. Data Sources & Attribution</h3>
-        <p>PureSkin utilizes data from publicly available sources to enrich our product database. Specifically:</p>
-        <ul>
-            <li><strong>Open Beauty Facts:</strong> Certain product data (including barcode, brand, name, and ingredients) is sourced from <a href="https://world.openbeautyfacts.org/" target="_blank">Open Beauty Facts</a>.</li>
-            <li><strong>License:</strong> Data from Open Beauty Facts is made available under the <strong>Open Database License (ODbL)</strong>. We respect the open data community and adhere to the terms of the ODbL.</li>
-            <li><strong>Contributors:</strong> We acknowledge and thank the contributors of the Open Beauty Facts project for their valuable work in creating open cosmetic data.</li>
-        </ul>
-    </section>
+            <h3>1. Acceptance of Terms</h3>
+            <p>By using PureSkin, you agree to these Terms. If you do not agree, you must not use the application.</p>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy or Terms of Service, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@pureskin.app">support@pureskin.app</a></p>
-    </section>
+            <h3>2. Description of Service</h3>
+            <p>PureSkin provides informational analysis of cosmetic and skincare ingredients. We offer both free and
+                premium access tiers. Features may change at any time without prior notice.</p>
 
-    <footer>
-        <p>&copy; 2025 PureSkin. All rights reserved.</p>
-    </footer>
-</div>
+            <div class="disclaimer-box">
+                <h3>3. NO MEDICAL ADVICE DISCLAIMER</h3>
+                <p>PURESKIN IS NOT A MEDICAL APP. THE CONTENT PROVIDED, INCLUDING AI-GENERATED ANALYSES, IS FOR
+                    INFORMATIONAL PURPOSES ONLY.</p>
+                <p>PureSkin does not provide diagnoses, treatments, prescriptions, or medical recommendations. No
+                    content in the application should be interpreted as a substitute for professional medical advice,
+                    diagnosis, or treatment.</p>
+                <p>ALWAYS CONSULT A DERMATOLOGIST OR QUALIFIED HEALTHCARE PROFESSIONAL REGARDING SKIN CONDITIONS OR
+                    ALLERGIES.</p>
+            </div>
+
+            <div class="alert-box">
+                <h3>4. AI & Accuracy Disclaimer</h3>
+                <p>Our analysis is powered by artificial intelligence (xAI / Grok). While we strive for accuracy, AI
+                    models can make mistakes, hallucinate ingredients, or provide incomplete information.</p>
+                <p><strong>You acknowledge that:</strong></p>
+                <ul>
+                    <li>The analysis may not be 100% accurate or up-to-date.</li>
+                    <li>Product formulations change frequently; the data in our app may differ from the physical product
+                        label.</li>
+                    <li>You should always verify the ingredient list on the physical product packaging before use.</li>
+                </ul>
+            </div>
+
+            <h3>5. Personal Compatibility Disclaimer</h3>
+            <p>Ingredient analyses and scores provided by PureSkin are generated using automated systems and general
+                scientific references.</p>
+            <p>Individual skin reactions may vary based on personal factors such as skin type, allergies, medical
+                conditions, genetics, lifestyle, or environmental exposure.</p>
+            <p><strong>PureSkin does not guarantee that a product analyzed as "safe" or "recommended" will be suitable
+                    for every individual user.</strong></p>
+
+            <h3>6. Advertising & Brand Neutrality</h3>
+            <p><strong>No Sponsored Content:</strong> PureSkin does not display paid advertisements, sponsored content,
+                or promoted products. We do not have any commercial relationships, sponsorships, endorsements, or
+                partnerships with cosmetic or skincare brands unless explicitly stated.</p>
+            <p><strong>Informational Use Only:</strong> All product names, brand names, and images displayed in the
+                application are shown solely for informational and identification purposes based on publicly available
+                product data or user-submitted content.</p>
+
+            <h3>7. User Responsibilities</h3>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Use the app for any illegal purpose.</li>
+                <li>Reverse engineer, decompile, or attempt to extract the source code of the app.</li>
+                <li>Submit false, misleading, or malicious content (e.g., fake products or inappropriate photos).</li>
+                <li>Abuse the credit system or attempt to bypass premium limitations.</li>
+            </ul>
+
+            <h3>8. Crowdsourced Contributions</h3>
+            <p>By submitting photos, corrections, ingredient lists, or new product data to PureSkin:</p>
+            <ul>
+                <li>You grant PureSkin a <strong>perpetual, irrevocable, worldwide, royalty-free, and transferable
+                        license</strong> to use, reproduce, modify, adapt, publish, translate, display, and distribute
+                    such content in any media.</li>
+                <li>You acknowledge that approved Contributions become part of our permanent, shared product database
+                    and cannot be withdrawn or revoked once submitted.</li>
+                <li>You represent that the content is accurate and does not violate the intellectual property rights of
+                    others.</li>
+                <li>We reserve the right to reject, edit, or remove any contribution at our sole discretion.</li>
+                <li>You waive any moral rights or claims of ownership over these Contributions once submitted.</li>
+            </ul>
+
+            <h3>9. Credits & Premium Access</h3>
+            <p>PureSkin may offer limited free analysis credits or Premium subscriptions.</p>
+            <ul>
+                <li><strong>Credits:</strong> Free credits have no monetary value and cannot be exchanged for cash.</li>
+                <li><strong>Subscriptions:</strong> Payment is charged to your Apple ID or Google Play account.
+                    Subscriptions automatically renew unless canceled at least 24 hours before the end of the current
+                    period. Management of subscriptions is handled via your device settings.</li>
+            </ul>
+
+            <h3>10. Limitation of Liability</h3>
+            <p>To the fullest extent permitted by law, PureSkin and its developers shall not be liable for any indirect,
+                incidental, special, consequential, or punitive damages, including but not limited to damages for loss
+                of profits, goodwill, or data, or for any skin reactions or health issues arising from the use of
+                products analyzed by the app.</p>
+
+            <h3>11. Termination</h3>
+            <p>We reserve the right to suspend or terminate your access to PureSkin at our sole discretion, without
+                notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third
+                parties.</p>
+
+            <h3>12. Changes to Terms</h3>
+            <p>We may update these Terms from time to time. Your continued use of the app following any changes
+                indicates your acceptance of the new Terms.</p>
+
+            <h3>13. Data Sources & Attribution</h3>
+            <p>PureSkin utilizes data from publicly available sources to enrich our product database. Specifically:</p>
+            <ul>
+                <li><strong>Open Beauty Facts:</strong> Certain product data (including barcode, brand, name, and
+                    ingredients) is sourced from <a href="https://world.openbeautyfacts.org/" target="_blank">Open
+                        Beauty Facts</a>.</li>
+                <li><strong>License:</strong> Data from Open Beauty Facts is made available under the <strong>Open
+                        Database License (ODbL)</strong>. We respect the open data community and adhere to the terms of
+                    the ODbL.</li>
+                <li><strong>Contributors:</strong> We acknowledge and thank the contributors of the Open Beauty Facts
+                    project for their valuable work in creating open cosmetic data.</li>
+            </ul>
+        </section>
+
+        <section id="account-deletion">
+            <h2>Account Deletion</h2>
+            <p>We respect your right to control your personal data. In compliance with Apple App Store and Google Play
+                Store policies, you can request the permanent deletion of your account and all associated data at any
+                time.</p>
+            <h3>How to Delete Your Account:</h3>
+            <ul>
+                <li><strong>In-App:</strong> Go to your <strong>Profile</strong> page within the PureSkin app, tap on
+                    "Settings" (or the gear icon) if applicable, and select the "Delete Account" option. Follow the
+                    on-screen confirmation steps to permanently delete your account.</li>
+                <li><strong>By Email:</strong> If you are unable to access the app, you may submit a deletion request by
+                    emailing us at <a href="mailto:pureskin.theapp@gmail.com">pureskin.theapp@gmail.com</a> with the
+                    subject line "Account Deletion Request". Please include your account email or User ID to facilitate
+                    the process.</li>
+            </ul>
+            <p><strong>Note:</strong> Deleting your account is irreversible. All your personal data, scan history, and
+                preferences will be permanently removed from our servers. Anonymized product contributions (such as
+                ingredient photos) may be retained to maintain database integrity.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or Terms of Service, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:pureskin.theapp@gmail.com">pureskin.theapp@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 PureSkin. All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
+
 </html>
