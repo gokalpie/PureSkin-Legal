@@ -198,7 +198,7 @@
     <div class="container">
         <header>
             <h1>PureSkin – Privacy Policy & Terms of Service</h1>
-            <p class="last-updated">Last Updated: December 12, 2025</p>
+            <p class="last-updated">Last Updated: December 20, 2025</p>
         </header>
 
         <section id="introduction">
@@ -215,78 +215,113 @@
             <h2>Privacy Policy</h2>
 
             <h3>1. Information We Collect</h3>
-            <p>We collect minimal data necessary to provide our services:</p>
+            <p>We collect information necessary to provide and improve the service, including:</p>
             <ul>
-                <li><strong>Account Information:</strong> If you create an account, we store your User ID (via Firebase
-                    Authentication). We do not store passwords; authentication is handled securely by Google/Firebase.
-                </li>
-                <li><strong>Product Data:</strong> Barcodes you scan, photos of products or ingredients you upload, and
-                    any text corrections you submit.</li>
-                <li><strong>Usage Data:</strong> Anonymous, aggregated analytics about how you interact with the app
-                    (e.g., screens visited, buttons clicked) to help us improve performance.</li>
-                <li><strong>Device Information:</strong> Device type and operating system version for troubleshooting
-                    and optimization.</li>
+                <li><strong>Account and profile:</strong> Firebase Authentication user ID, display name/email (when
+                    provided by your sign-in provider), skin type, age range, and skin concerns.</li>
+                <li><strong>Product activity:</strong> Barcodes you scan, products you view, favorites, ratings, and
+                    recent scans stored locally on your device.</li>
+                <li><strong>Contributions:</strong> Product photos, ingredient list photos, ingredient text, and
+                    corrections you submit.</li>
+                <li><strong>Diagnostics and analytics:</strong> App events, performance metrics, crash logs, and
+                    device/OS details to troubleshoot issues and improve stability.</li>
+                <li><strong>Advertising data (Google AdMob):</strong> Advertising ID, ad interactions (impressions and
+                    clicks), device information, and coarse location (for example, city/region) for ad delivery and
+                    measurement.</li>
+                <li><strong>Subscription data:</strong> Purchase status and entitlement information provided by the
+                    Apple App Store/Google Play and RevenueCat.</li>
             </ul>
-            <p><strong>We DO NOT collect:</strong> Medical records, biometric data, precise location data, or payment
-                card details (payments are processed entirely by the Apple App Store or Google Play Store).</p>
+            <p><strong>We do not collect:</strong> Precise location, medical records, biometric identifiers, or payment
+                card numbers. Payments are processed by the Apple App Store or Google Play.</p>
 
             <h3>2. How We Use Your Information</h3>
             <p>Your data is used to:</p>
             <ul>
-                <li>Provide ingredient analysis and product insights.</li>
-                <li>Manage your account and sync your scan history.</li>
-                <li>Improve the accuracy of our product database through crowd-sourced contributions.</li>
-                <li>Detect and prevent fraud or abuse of the service.</li>
+                <li>Provide ingredient analysis, product insights, and personalized content.</li>
+                <li>Manage your account, favorites, ratings, and contribution history.</li>
+                <li>Operate rewarded ads and subscription entitlements.</li>
+                <li>Improve the accuracy of our product database and app experience.</li>
+                <li>Detect, prevent, and investigate fraud or abuse.</li>
             </ul>
 
-            <h3>3. AI & Automated Processing (xAI / Grok)</h3>
-            <p>PureSkin uses artificial intelligence services provided by <strong>xAI (Grok models)</strong> to process
-                and analyze ingredient information.</p>
-            <p>You acknowledge and agree to the following data usage:</p>
+            <h3>3. Device Permissions</h3>
+            <p>We request access to:</p>
             <ul>
-                <li><strong>Model Improvement:</strong> Product-related data sent to xAI (such as ingredient text lists,
-                    OCR outputs, and anonymized product metadata) may be processed in accordance with <a
-                        href="https://x.ai/legal/privacy-policy" target="_blank">xAI’s Privacy Policy</a> and may be
-                    used by xAI to evaluate, train, or refine their AI models to improve performance and reliability.
-                </li>
-                <li><strong>No PII Transmission:</strong> PureSkin does not transmit personally identifiable user
-                    information (PII) to xAI. Only product-specific content is shared for analysis.</li>
+                <li><strong>Camera:</strong> To scan product barcodes.</li>
+                <li><strong>Photos/Storage:</strong> To upload product or ingredient photos for contributions.</li>
             </ul>
+            <p>You can manage permissions in your device settings.</p>
 
-            <h3>4. User-Generated Content</h3>
-            <p>When you submit photos, new products, corrections, or other content to PureSkin ("Contributions"):</p>
+            <h3>4. AI & Automated Processing (xAI/Grok and Google Cloud Vision)</h3>
+            <p>We use AI and OCR to analyze ingredient information:</p>
             <ul>
-                <li><strong>Public Availability:</strong> By submitting product images, ingredient photos, corrections,
-                    or other content to PureSkin, you acknowledge and agree that this content may be reviewed, modified,
-                    stored, and made publicly available within the application after administrative approval.</li>
-                <li><strong>Database Improvement:</strong> User-submitted content may be used to improve the overall
-                    quality, accuracy, and completeness of the PureSkin product database for the benefit of all users.
-                </li>
-                <li><strong>Review Process:</strong> All contributions are subject to administrative review. We reserve
-                    the right to reject or modify content that does not meet our standards.</li>
+                <li><strong>xAI (Grok models):</strong> Ingredient lists and product context may be processed by xAI to
+                    generate summaries and insights. This processing is governed by <a
+                        href="https://x.ai/legal/privacy-policy" target="_blank">xAI's Privacy Policy</a>.</li>
+                <li><strong>Google Cloud Vision OCR:</strong> Ingredient list photos may be processed to extract text.
+                    This processing is governed by <a href="https://cloud.google.com/privacy" target="_blank">Google's
+                        Privacy Policy</a>.</li>
+                <li><strong>No PII Transmission:</strong> We do not send personally identifiable information (such as
+                    name or email) to AI or OCR providers. Only product-related content is shared.</li>
             </ul>
 
-            <h3>5. Data Storage & Security</h3>
-            <p>We use <strong>Google Firebase</strong> (Firestore, Storage, and Cloud Functions) to securely store and
-                process data. We implement industry-standard security measures to protect your information. However, no
-                method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+            <h3>5. Advertising (Google AdMob)</h3>
+            <p>Free users may see ads served by Google AdMob, including rewarded ads for credits. AdMob may collect or
+                receive your advertising ID, device information, coarse location, and ad interaction data to show and
+                measure ads. You can control ad personalization through your device settings (for example, by limiting
+                ad tracking or resetting your advertising ID).</p>
+            <p>We do not sell personal data for monetary consideration. Some jurisdictions may consider the use of ad
+                identifiers for personalized ads a "sale" or "sharing." You can limit this through your device
+                settings.</p>
+            <p>For more information, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy
+                    Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob
+                    policies</a>.</p>
 
-            <h3>6. Data Retention</h3>
-            <p>We retain your account data as long as your account is active. If you delete your account, your personal
-                profile data is removed. However, anonymized product contributions (such as corrected ingredient lists
-                and product photos) will be retained in our database indefinitely to ensure service continuity for other
-                users.</p>
+            <h3>6. Analytics & Crash Reporting</h3>
+            <p>We use Firebase Analytics to understand app usage and Firebase Crashlytics to diagnose crashes. These
+                services may collect device identifiers, app events, and technical diagnostics as described in <a
+                    href="https://firebase.google.com/support/privacy" target="_blank">Firebase's Privacy Policy</a>.
+            </p>
 
-            <h3>7. User Rights</h3>
+            <h3>7. Data Sharing</h3>
+            <p>We share data only with trusted service providers that help operate the app:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> Authentication, Firestore, Storage, Cloud Functions, Analytics,
+                    Crashlytics.</li>
+                <li><strong>Google AdMob:</strong> Advertising delivery and measurement.</li>
+                <li><strong>RevenueCat:</strong> Subscription management and entitlement status.</li>
+                <li><strong>xAI (Grok) and Google Cloud Vision:</strong> AI analysis and OCR processing.</li>
+                <li><strong>Apple/Google:</strong> In-app purchase processing and subscription management.</li>
+            </ul>
+            <p>We may also share information if required by law, to protect user safety, or in connection with a
+                business transfer (such as a merger or acquisition).</p>
+
+            <h3>8. Data Storage & Security</h3>
+            <p>We use Google Firebase (Firestore, Storage, and Cloud Functions) to securely store and process data. We
+                implement industry-standard security measures to protect your information. However, no method of
+                transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+            <h3>9. Data Retention</h3>
+            <p>We retain your account data for as long as your account is active. If you delete your account, your
+                personal profile data is removed. Anonymized or aggregated contribution data (such as corrected
+                ingredient lists and product photos) may be retained to maintain database integrity. Recent scans are
+                stored locally on your device and can be cleared by deleting app data.</p>
+
+            <h3>10. User Rights</h3>
             <p>Depending on your location (including GDPR for EU users), you have the right to:</p>
             <ul>
                 <li>Access the personal data we hold about you.</li>
                 <li>Request correction of inaccurate data.</li>
                 <li>Request deletion of your account and personal data.</li>
+                <li>Opt out of personalized ads via your device settings.</li>
             </ul>
-            <p>You can exercise these rights directly within the app settings or by contacting us.</p>
+            <p>You can exercise these rights in the app settings or by contacting us.</p>
 
-            <h3>8. Children's Privacy</h3>
+            <h3>11. International Transfers</h3>
+            <p>Your information may be processed and stored in countries other than your own, including the United
+                States, where our service providers operate. We rely on appropriate safeguards for such transfers.</p>
+
+            <h3>12. Children's Privacy</h3>
             <p>PureSkin is not intended for children under the age of 13 (or 16 in certain jurisdictions). We do not
                 knowingly collect personal data from children. If we become aware that we have collected such data, we
                 will take steps to delete it immediately.</p>
@@ -300,13 +335,16 @@
             <p>By using PureSkin, you agree to these Terms. If you do not agree, you must not use the application.</p>
 
             <h3>2. Description of Service</h3>
-            <p>PureSkin provides informational analysis of cosmetic and skincare ingredients. We offer both free and
-                premium access tiers. Features may change at any time without prior notice.</p>
+            <p>PureSkin provides informational analysis of cosmetic and skincare ingredients. The app includes a free,
+                ad-supported tier with limited credits and a Premium subscription that removes ads and provides
+                expanded access. Features may change at any time without prior notice.</p>
 
             <div class="disclaimer-box">
                 <h3>3. NO MEDICAL ADVICE DISCLAIMER</h3>
                 <p>PURESKIN IS NOT A MEDICAL APP. THE CONTENT PROVIDED, INCLUDING AI-GENERATED ANALYSES, IS FOR
                     INFORMATIONAL PURPOSES ONLY.</p>
+                <p>PureSkin is not a healthcare provider and does not create a doctor-patient relationship. Do not use
+                    the app for medical diagnosis, treatment decisions, emergencies, or urgent care.</p>
                 <p>PureSkin does not provide diagnoses, treatments, prescriptions, or medical recommendations. No
                     content in the application should be interpreted as a substitute for professional medical advice,
                     diagnosis, or treatment.</p>
@@ -316,8 +354,10 @@
 
             <div class="alert-box">
                 <h3>4. AI & Accuracy Disclaimer</h3>
-                <p>Our analysis is powered by artificial intelligence (xAI / Grok). While we strive for accuracy, AI
-                    models can make mistakes, hallucinate ingredients, or provide incomplete information.</p>
+                <p>Our analysis is powered by artificial intelligence (xAI / Grok) and OCR (Google Cloud Vision). While
+                    we strive for accuracy, AI models can make mistakes, hallucinate ingredients, or provide incomplete
+                    information.</p>
+                <p>AI outputs are probabilistic and may be outdated, incomplete, or incorrect.</p>
                 <p><strong>You acknowledge that:</strong></p>
                 <ul>
                     <li>The analysis may not be 100% accurate or up-to-date.</li>
@@ -332,18 +372,27 @@
                 scientific references.</p>
             <p>Individual skin reactions may vary based on personal factors such as skin type, allergies, medical
                 conditions, genetics, lifestyle, or environmental exposure.</p>
+            <p>You are responsible for reviewing product labels, instructions, and warnings provided by the product
+                manufacturer. Use of any product is at your own risk.</p>
             <p><strong>PureSkin does not guarantee that a product analyzed as "safe" or "recommended" will be suitable
                     for every individual user.</strong></p>
 
-            <h3>6. Advertising & Brand Neutrality</h3>
-            <p><strong>No Sponsored Content:</strong> PureSkin does not display paid advertisements, sponsored content,
-                or promoted products. We do not have any commercial relationships, sponsorships, endorsements, or
-                partnerships with cosmetic or skincare brands unless explicitly stated.</p>
-            <p><strong>Informational Use Only:</strong> All product names, brand names, and images displayed in the
-                application are shown solely for informational and identification purposes based on publicly available
-                product data or user-submitted content.</p>
+            <h3>6. No Warranties; Use at Your Own Risk</h3>
+            <p>PureSkin is provided on an "as is" and "as available" basis. To the maximum extent permitted by law, we
+                disclaim all warranties, express or implied, including any warranties of accuracy, reliability,
+                completeness, availability, fitness for a particular purpose, and non-infringement.</p>
+            <p>You assume all risks associated with your use of the app and any products you choose to use based on the
+                app's information.</p>
 
-            <h3>7. User Responsibilities</h3>
+            <h3>7. Advertising, Rewards, and Brand Neutrality</h3>
+            <p><strong>Advertising:</strong> Free users may see ads served by third parties (including Google AdMob).
+                Ads are clearly labeled and do not influence our ingredient analysis, scores, or editorial content.</p>
+            <p><strong>Rewarded Ads:</strong> From time to time we may offer rewarded ads that grant analysis credits.
+                Availability and reward amounts are not guaranteed and may change or be limited.</p>
+            <p><strong>Brand Neutrality:</strong> We do not endorse advertised products or verify third-party claims.
+                Product names and images in the app are shown for identification and informational purposes only.</p>
+
+            <h3>8. User Responsibilities</h3>
             <p>You agree not to:</p>
             <ul>
                 <li>Use the app for any illegal purpose.</li>
@@ -352,7 +401,7 @@
                 <li>Abuse the credit system or attempt to bypass premium limitations.</li>
             </ul>
 
-            <h3>8. Crowdsourced Contributions</h3>
+            <h3>9. Crowdsourced Contributions</h3>
             <p>By submitting photos, corrections, ingredient lists, or new product data to PureSkin:</p>
             <ul>
                 <li>You grant PureSkin a <strong>perpetual, irrevocable, worldwide, royalty-free, and transferable
@@ -366,31 +415,51 @@
                 <li>You waive any moral rights or claims of ownership over these Contributions once submitted.</li>
             </ul>
 
-            <h3>9. Credits & Premium Access</h3>
-            <p>PureSkin may offer limited free analysis credits or Premium subscriptions.</p>
+            <h3>10. Credits, Rewards & Premium Access</h3>
+            <p>PureSkin may offer limited free analysis credits, rewarded ad credits, or Premium subscriptions.</p>
             <ul>
-                <li><strong>Credits:</strong> Free credits have no monetary value and cannot be exchanged for cash.</li>
+                <li><strong>Credits:</strong> Free or rewarded credits have no monetary value and cannot be exchanged
+                    for cash.</li>
+                <li><strong>Rewarded ads:</strong> Rewards are subject to availability and may be limited or removed.
+                    Attempting to abuse the reward system may result in suspension.</li>
                 <li><strong>Subscriptions:</strong> Payment is charged to your Apple ID or Google Play account.
                     Subscriptions automatically renew unless canceled at least 24 hours before the end of the current
-                    period. Management of subscriptions is handled via your device settings.</li>
+                    period. Management and refunds are handled via your device settings and the app store provider.</li>
             </ul>
 
-            <h3>10. Limitation of Liability</h3>
-            <p>To the fullest extent permitted by law, PureSkin and its developers shall not be liable for any indirect,
-                incidental, special, consequential, or punitive damages, including but not limited to damages for loss
-                of profits, goodwill, or data, or for any skin reactions or health issues arising from the use of
-                products analyzed by the app.</p>
+            <h3>11. Third-Party Services</h3>
+            <p>The app uses third-party services including Google Firebase, Google AdMob, RevenueCat, xAI (Grok), Google
+                Cloud Vision, and Apple/Google in-app purchase systems. Your use of these services may be subject to
+                their respective terms and policies.</p>
+            <p>We are not responsible for third-party products, services, advertisements, offers, or claims. Any
+                interactions you have with third parties are between you and the third party.</p>
 
-            <h3>11. Termination</h3>
+            <h3>12. Limitation of Liability</h3>
+            <p>To the fullest extent permitted by law, PureSkin and its developers shall not be liable for any direct
+                or indirect, incidental, special, consequential, exemplary, or punitive damages, including but not
+                limited to damages for loss of profits, goodwill, data, or business interruption, or for any skin
+                reactions, allergies, injuries, or health issues arising from the use of products analyzed by the app.</p>
+            <p>Without limiting the foregoing, we are not responsible for losses or damages arising from reliance on
+                app content, product labeling errors, changes in product formulations, service interruptions, bugs or
+                downtime, third-party advertisements or links, or unauthorized access to or alteration of data.</p>
+            <p>This limitation applies to claims based on warranty, contract, tort, negligence, strict liability, or
+                any other legal theory, even if we have been advised of the possibility of such damages.</p>
+
+            <h3>13. Indemnification</h3>
+            <p>You agree to indemnify, defend, and hold harmless PureSkin and its developers from any claims, damages,
+                liabilities, losses, and expenses (including reasonable attorney fees) arising out of or related to
+                your use of the app, your contributions, or your violation of these Terms.</p>
+
+            <h3>14. Termination</h3>
             <p>We reserve the right to suspend or terminate your access to PureSkin at our sole discretion, without
                 notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third
                 parties.</p>
 
-            <h3>12. Changes to Terms</h3>
+            <h3>15. Changes to Terms</h3>
             <p>We may update these Terms from time to time. Your continued use of the app following any changes
                 indicates your acceptance of the new Terms.</p>
 
-            <h3>13. Data Sources & Attribution</h3>
+            <h3>16. Data Sources & Attribution</h3>
             <p>PureSkin utilizes data from publicly available sources to enrich our product database. Specifically:</p>
             <ul>
                 <li><strong>Open Beauty Facts:</strong> Certain product data (including barcode, brand, name, and
@@ -419,9 +488,10 @@
                     subject line "Account Deletion Request". Please include your account email or User ID to facilitate
                     the process.</li>
             </ul>
-            <p><strong>Note:</strong> Deleting your account is irreversible. All your personal data, scan history, and
-                preferences will be permanently removed from our servers. Anonymized product contributions (such as
-                ingredient photos) may be retained to maintain database integrity.</p>
+            <p><strong>Note:</strong> Deleting your account is irreversible. Your personal profile data will be
+                permanently removed from our servers. Recent scans are stored locally on your device and can be cleared
+                by deleting app data. Anonymized product contributions (such as ingredient photos) may be retained to
+                maintain database integrity.</p>
         </section>
 
         <section id="contact">
